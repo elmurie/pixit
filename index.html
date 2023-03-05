@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Noto+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/039088e916.js" crossorigin="anonymous"></script>
+    <script type="module" src="main.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">PIXIT</div>
+            <div class="grid-size">
+                <div class="grid-size__width">
+                    <input type="number" name="width" id="grid-width" value="60">
+                </div>
+                <div class="grid-size__height">
+                    <input type="number" name="height" id="grid-height" value="30">
+                </div>
+            </div>
+            <div><button class="reset btn" id="resetBtn">reset</button></div>
+        </nav>
+    </header>
+    <main>
+        <!-- <img src="example.png" alt=""> -->
+        <div class="color-picker container" id="color-picker"></div>
+        <div class="canvas-container">
+            <canvas id="drawingBoard"></canvas>
+            <div class="btn-container">
+                <a class="btn" data-download>Download Image</a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

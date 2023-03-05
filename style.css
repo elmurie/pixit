@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f4f5;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.btn {
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background-color: #e5e6eb;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #fff;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px;
+}
+header .logo {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+}
+header .grid-size {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 0 70%;
+  gap: 10px;
+}
+header .grid-size__width *, header .grid-size__height * {
+  max-width: 150px;
+  text-align: center;
+  padding: 5px 20px;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+}
+
+main .color-picker {
+  padding: 15px 10px;
+  background-color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5px;
+}
+main .color-picker [data-color="#fff"] {
+  border: 1px solid #e6e8ec;
+}
+main .color-picker .color-box {
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+main .color-picker .color-box[data-color=none].active {
+  border: 2px solid #21c45d;
+}
+main .color-picker .color-box.active .color-core {
+  border: 2px solid #21c45d;
+}
+main .color-picker .color-box .color-core {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .canvas-container {
+  text-align: center;
+}
+main .canvas-container canvas {
+  border: 1px solid #000;
+}
+main .btn-container {
+  text-align: center;
+  margin: 25px 0;
+}/*# sourceMappingURL=style.css.map */
